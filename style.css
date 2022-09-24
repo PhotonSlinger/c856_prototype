@@ -1,0 +1,199 @@
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body p {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.1rem;
+}
+
+body ul {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 3px 2px black;
+    padding-right: 20vw;
+    align-items: center;
+
+    background-image: url("images/pedro-bariak-lVRolxDY5q0-unsplash.jpg");
+    background-color: cornflowerblue;
+    background-position: center;
+    background-size: cover;
+}
+
+.title>h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin: 2rem;
+    max-width: 800;
+    width: 100%;
+}
+
+header>h1 {
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.item {
+    flex: 2 1 60%;
+}
+
+.image {
+    flex: 1 1 30%;
+}
+
+.image__full {
+    flex: 1 1 90%;
+}
+
+.image__full>img {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+div>img {
+    min-width: 300px;
+    max-width: 90%;
+    padding: 5%;
+}
+
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #eeeeee;
+}
+
+.footer__headline {
+    font-weight: bold;
+    font-family: 'Helvetica';
+    margin-bottom: .2rem;
+    font-size: 1.3rem;
+}
+
+.footer__list {
+    font-family: 'Helvetica';
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__list a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__list li {
+    margin: .2rem;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
+    color: black;
+}
+
+.navbar a:hover {
+    background: #999999;
+    border-radius: 10px;
+}
+
+
+@media all and (max-width: 900px) {
+
+    body {
+        margin-top: 0;
+    }
+
+    header {
+        position: static;
+        display: block;
+        justify-content: center;
+    }
+
+    .navbar {
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+        overflow: hidden;
+    }
+
+    .content {
+        flex-flow: row wrap;
+    }
+
+    .item {
+        flex: 1 1 100%;
+    }
+
+    .image {
+        flex: 1 1 100%;
+    }
+
+}
+
+@media all and (max-width: 650px) {
+    .navbar {
+        display: block;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    footer {
+        display: block;
+        flex-flow: row wrap;
+    }
+
+    footer div {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    footer li {
+        padding: .3rem;
+    }
+}
